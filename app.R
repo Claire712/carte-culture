@@ -74,7 +74,7 @@ ui <- page_sidebar( #la  bare de coté
     selectInput("region", "Région",
                 choices = c("Toutes les régions", sort(unique(na.omit(lieux$region))))),
     
-    textInput("recherche", "Rechercher un lieu", placeholder = "ex. Giverny"),
+    textInput("recherche", "Rechercher un lieu", placeholder = "exemple: orsay"),
     
     textOutput("compteur"),
     
